@@ -1,15 +1,17 @@
 import Balance from './components/Balance'
 import Operations from './components/Operations'
-import './App.css'
+
 
 
 function App() {
 
 
   return (
-    <div>
-      <Balance />
-      <Operations />
+    <div className="got-dragon-bg min-h-screen px-4 py-10">
+      <div className="mx-auto w-full max-w-md rounded-2xl border border-white/25 bg-transparent p-6 shadow-2xl backdrop-blur-md">
+        <Balance />
+        <Operations />
+      </div>
     </div>
   )
 }
