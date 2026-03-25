@@ -1,6 +1,10 @@
 import { DEPOSIT, WITHDRAW } from '../actions/accountActions';
 
-export const accountReducer = (state = { balance: 0 }, action) => {
+const initialState = {
+    balance: 0
+};
+
+export const accountReducer = (state = initialState, action) => {
     switch (action.type) {
         case DEPOSIT:
             return { ...state, balance: state.balance + action.payload };
