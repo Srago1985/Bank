@@ -1,9 +1,4 @@
-export const SET_QUOTE = 'SET_QUOTE';
-
-export const setQuote = (quote) => ({
-    type: SET_QUOTE,
-    payload: quote,
-});
+import { setQuote } from '../quote/quoteSlice';
 
 export const fetchQuote = () => {
     return async (dispatch) => {

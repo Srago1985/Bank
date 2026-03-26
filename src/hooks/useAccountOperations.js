@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { deposit, withdraw } from '../actions/accountActions'
+import { deposit, withdraw } from '../features/account/accountSlice'
 
 export const useAccountOperations = () => {
   const [amount, setAmount] = useState(0)
